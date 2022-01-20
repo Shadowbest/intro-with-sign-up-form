@@ -50,6 +50,7 @@ body {
 }
 
 main {
+  max-width: 75rem;
   text-align: center;
 }
 
@@ -137,4 +138,47 @@ main {
   color: var(--red);
   font-weight: 600;
   text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 62em) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-image: url("../img/bg-intro-desktop.png");
+    background-position: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .intro__title,
+  .intro__text {
+    max-width: initial;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .intro__title {
+    font-size: 3.15rem;
+    line-height: 1.2;
+  }
+
+  .intro__text {
+    font-size: 1rem;
+  }
+
+  .form {
+    padding: 2rem;
+  }
 }
