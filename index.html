@@ -8,6 +8,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
     <title>Sign-Up Intro Component</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
       <section class="form-section">
         <p class="try-it"><strong>Try it free 7 days</strong> then &dollar;20/mo. thereafter</p>
 
-        <form class="form">
+        <form class="form" id="sign-up" novalidate>
           <div class="field">
             <label for="fname" class="visually-hidden">First name</label>
             <input type="text" id="fname" class="input" placeholder="First Name" />
