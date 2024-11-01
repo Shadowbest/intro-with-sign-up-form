@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
 
 
   const firstNameValid = checkFirstName(firstNameInput);
-  const lastNameValid = checkFirstName(lastNameInput);
+  const lastNameValid = checkLastName(lastNameInput);
   const isEmailValid = checkEmail(emailInput);
   const isPassword   = checkPassword(passwordInput);
 
